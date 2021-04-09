@@ -1,14 +1,13 @@
 R 1080 720
 
-F 255,255,000000020
-
+F 255,255,20
 C 0,0,0
 
-SO /Users/tkhabous/Desktop/cub3DproMax/textures/texture2.xpm
-WE /Users/tkhabous/Desktop/cub3DproMax/textures/texture3.xpm
-NO /Users/tkhabous/Desktop/cub3DproMax/textures/texture1.xpm
-EA /Users/tkhabous/Desktop/cub3DproMax/textures/texture4.xpm
-S  /Users/tkhabous/Desktop/cub3DproMax/textures/textures.xpm
+SO textures/texture2.xpm
+WE textures/texture3.xpm
+NO textures/texture1.xpm
+EA textures/texture4.xpm
+S  textures/textures.xpm
 
 1111111111111111111111  11111111111111111111111111
 1000000000000000000001  10000000000000000000000001
