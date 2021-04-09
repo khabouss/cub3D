@@ -38,13 +38,13 @@ void	conditions_a(int key, int *a)
 		g_up -= g_height / 6;
 	if (key == 1 && g_map[a[0]][a[1]] != 1 && g_map[a[0]][a[1]] != 2)
 	{
-		g_x -= (g_wallsize / 3 * cos(g_vision_alpha));
-		g_y -= (g_wallsize / 3 * sin(g_vision_alpha));
+		g_x -= 1.5*(g_wallsize / 3 * cos(g_vision_alpha));
+		g_y -= 1.5*(g_wallsize / 3 * sin(g_vision_alpha));
 	}
 	if (key == 13 && g_map[a[2]][a[3]] != 1 && g_map[a[2]][a[3]] != 2)
 	{
-		g_x += (g_wallsize / 3 * cos(g_vision_alpha));
-		g_y += (g_wallsize / 3 * sin(g_vision_alpha));
+		g_x += 1.5*(g_wallsize / 3 * cos(g_vision_alpha));
+		g_y += 1.5*(g_wallsize / 3 * sin(g_vision_alpha));
 	}
 }
 
@@ -52,13 +52,13 @@ void	conditions_b(int key, int *a)
 {
 	if (key == 0 && g_map[a[4]][a[5]] != 1 && g_map[a[4]][a[5]] != 2)
 	{
-		g_x += (g_wallsize / 3 * cos(M_PI / 2 - g_vision_alpha));
-		g_y -= (g_wallsize / 3 * sin(M_PI / 2 - g_vision_alpha));
+		g_x += 2*(g_wallsize / 3 * cos(M_PI / 2 - g_vision_alpha));
+		g_y -= 2*(g_wallsize / 3 * sin(M_PI / 2 - g_vision_alpha));
 	}
 	if (key == 2 && g_map[a[6]][a[7]] != 1 && g_map[a[6]][a[7]] != 2)
 	{
-		g_x -= (g_wallsize / 3 * cos(M_PI / 2 - g_vision_alpha));
-		g_y += (g_wallsize / 3 * sin(M_PI / 2 - g_vision_alpha));
+		g_x -= 2*(g_wallsize / 3 * cos(M_PI / 2 - g_vision_alpha));
+		g_y += 2*(g_wallsize / 3 * sin(M_PI / 2 - g_vision_alpha));
 	}
 	if (key == 123)
 		g_vision_alpha -= 0.05;
